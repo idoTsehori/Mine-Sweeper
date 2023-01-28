@@ -1,0 +1,155 @@
+body {
+  background-color: #f5f8ed;
+  text-align: center;
+  background: url('https://img.freepik.com/free-vector/summer-forest-landscape-with-lake-trees_107791-12500.jpg?w=900&t=st=1674924218~exp=1674924818~hmac=151e95bbe97855acfe09a82cb07b0007770a4779095c0691badfe74e918f6bf7');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+button {
+  background-color: #fff2f2;
+  border: none;
+  margin-left: 5px;
+  border-radius: 50%;
+  padding: 11px;
+  cursor: pointer;
+  font-weight: bolder;
+  font-size: 13px;
+  transition: 0.3s;
+}
+button:hover {
+  background-color: #e7d3d3;
+}
+/* title */
+.title {
+  font-size: 40px;
+  height: 33px;
+}
+
+/* Level Buttons: */
+.easy-btn {
+  color: rgba(86, 110, 48, 0.783);
+}
+.medium-btn {
+  color: rgba(155, 104, 8, 0.7);
+}
+.expert-btn {
+  color: rgba(255, 0, 0, 0.799);
+}
+.game-container {
+  background-color: #fbf4e0;
+  opacity: 0.95;
+  border: 1px dashed rgb(211, 215, 193);
+  border-radius: 18%;
+  margin: auto;
+  height: 800px;
+  width: 1000px;
+}
+
+/* Game Details: */
+.game-details .restart-emoji {
+  display: block;
+  text-align: center;
+  padding: 7px;
+  font-size: 23px;
+  margin: auto;
+  width: 70px;
+  height: 60px;
+  cursor: pointer;
+  font-size: 50px;
+}
+
+.game-details h3 {
+  display: inline-block;
+  margin-right: 22px;
+  margin-left: 22px;
+}
+.game-container .hints-count {
+  float: left;
+  position: relative;
+  top: 100px;
+  left: 10px;
+}
+
+.timer {
+  float: left;
+  position: relative;
+  top: 200px;
+  right: 115px;
+}
+
+/* Board: */
+table {
+  margin: auto;
+
+  border-collapse: collapse;
+}
+
+/* Cells: */
+.cell {
+  background: linear-gradient(#f7f6f1, #eee2d6d9);
+  border: 1px solid black;
+  cursor: pointer;
+}
+.cell:hover {
+  background: linear-gradient(#dfdbc8, #e5d4c3d9);
+}
+.cell-easy {
+  width: 120px;
+  height: 120px;
+  font-size: 30px;
+}
+.cell-medium {
+  width: 77px;
+  height: 77px;
+  font-size: 25px;
+}
+.cell-expert {
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+}
+
+.regular-cell {
+  background: linear-gradient(rgb(220, 210, 198), rgb(211, 197, 180));
+}
+.regular-cell:hover {
+  background: linear-gradient(rgb(192, 176, 158), rgb(212, 190, 165));
+}
+.mine-cell {
+  background: #e8abab;
+}
+.mine-cell:hover {
+  background: #dd9696;
+}
+
+/* HINTS */
+.hints {
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.hint-1:hover {
+  font-size: 22px;
+}
+.hint-2:hover {
+  font-size: 22px;
+}
+.hint-3:hover {
+  font-size: 22px;
+}
+
+.marked-hint {
+  color: red;
+  font-size: 23px;
+  background-color: rgb(237, 172, 238);
+  border-radius: 45%;
+}
+
+footer span {
+  color: #e8abab;
+  height: 1px;
+  opacity: 0.8;
+  font-size: larger;
+}

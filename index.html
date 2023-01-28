@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mine Sweeper 💣</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body onload="onInitGame('easy',4,2,2)">
+    <div class="levels-container">
+      <h1 class="title">Mine Sweeper</h1>
+      <button class="easy-btn" onclick="onInitGame('easy',4,2,2)">Easy (4)</button>
+      <button class="medium-btn" onclick="onInitGame('medium',8,14,3)">Medium (8)</button>
+      <button class="expert-btn" onclick="onInitGame('expert',12,32,3)">Expert (12)</button>
+    </div>
+    <div class="game-container">
+      <h2 class="hints-count" title="click on the light and then on the board for hint">
+        Hints: <span class="hints hint-1" onclick="onHintClick(this)">💡</span
+        ><span class="hints hint-2" onclick="onHintClick(this)">💡</span
+        ><span class="hints hint-3" onclick="onHintClick(this)">💡</span>
+      </h2>
+      <h2 class="timer">
+        Timer: <span><!--Render Timer Count Here!--></span>
+      </h2>
+
+      <div class="game-details">
+        <span class="restart-emoji" onclick="restartGame(this)">😀</span>
+        <h3>
+          LIVES: <span class="lives"><!--Render Live count here--></span>
+        </h3>
+        <h3>
+          Mines Left: <span class="mines-left"><!--Render Live count here--></span>
+        </h3>
+      </div>
+      <table>
+        <tbody class="board">
+          <!-- Render board over here! -->
+        </tbody>
+      </table>
+    </div>
+    <footer>
+      <hr />
+      <span> By Ido Tsehori </span>
+    </footer>
+    <script src="js/util.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
